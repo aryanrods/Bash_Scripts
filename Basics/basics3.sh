@@ -1,7 +1,12 @@
-#!/bin/bash 
+#!/bin/bash
 
-echo "What's your name?" 
+echo "Please enter a number: "
+read num
 
-read entered_name 
-
-echo -e "\nWelcome to bash tutorial" $entered_name
+if [ $num -gt 0 ]; then
+  echo "$num is positive"
+elif [ $num -lt 0 ]; then
+  echo "$num is negative"
+else
+  echo "$num is zero"
+fi
