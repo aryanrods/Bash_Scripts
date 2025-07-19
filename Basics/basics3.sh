@@ -10,3 +10,11 @@ elif [ $num -lt 0 ]; then
 else
   echo "$num is zero"
 fi
+
+greet() {
+local name="Aryan"
+ sirname ="Rods"
+  echo "Hello, $name $sirname!"
+}
+greet #calling the funciton
+echo "$name $sirname, welcome to the script!"
